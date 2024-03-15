@@ -1,6 +1,4 @@
-from dataclasses import dataclass
 
-@dataclass
 class Node:
     def __init__(self, data):
         self.left = None
