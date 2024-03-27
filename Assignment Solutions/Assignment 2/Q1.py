@@ -1,22 +1,18 @@
+from dataclasses import dataclass
+@dataclass
 class Person:
-    def __init__(self, first_name, last_name, email):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.email = email
-
+    first_name: str
+    last_name: str
+    email: str
 
     def get_full_name(self):
         return f"{self.first_name} {self.last_name}"
-
+@dataclass
 class Customer(Person):
-    def __init__(self, first_name, last_name, email, number):
-        super().__init__(first_name, last_name, email)
-        self.number = number
-
+    number: str
+@dataclass
 class Employee(Person):
-    def __init__(self, first_name, last_name, email, ssn):
-        super().__init__(first_name, last_name, email)
-        self.ssn = ssn
+    ssn: str
 
 def display_person_info(person):
     if isinstance(person, Customer):
