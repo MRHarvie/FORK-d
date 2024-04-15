@@ -39,7 +39,7 @@ def create_movie_entries(conn):
     cur = conn.cursor()
     query = "INSERT INTO movies VALUES (?, ?, ?, ?)"
     movie_collection = (('Spirited Away', 2005, 125, get_category_id(conn, 'Animation')),
-                        ('Alladin', 1992, 90, get_category_id(conn, 'Animation')))
+                        ('Aladin', 1992, 90, get_category_id(conn, 'Animation')))
     for i in range(len(movie_collection)):
         cur.execute(query, movie_collection[i])
     conn.commit()

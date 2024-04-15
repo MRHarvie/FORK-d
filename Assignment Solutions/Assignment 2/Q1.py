@@ -27,8 +27,6 @@ def display_person_info(person): #Displays info dependant on instance; Customer 
         print(f"Email: \t\t{person.email}")
         print(f"SSN: \t{person.ssn}")
         print()
-
-
 def main(): #Main Function run a loop
     print("Customer/Employee Data Entry\n")
     run = 'y'
