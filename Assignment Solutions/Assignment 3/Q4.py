@@ -45,7 +45,7 @@ entry_b.grid(row=1, column=1, padx=5, pady=5)
 #Creating read only label for hypotenuse
 label_c = tk.Label(frame, text="Side C:")
 label_c.grid(row=2, column=0, padx=5, pady=5)
-entry_c = tk.Entry(frame, state="readonly", bg="light grey")
+entry_c = tk.Entry(frame, state="readonly")
 entry_c.grid(row=2, column=1, padx=5, pady=5)
 
 # Creating calculate and exit buttons
